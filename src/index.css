@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: Poppins;
+  src: url(./assets/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: Poppins-bold;
+  src: url(./assets/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: Josefin-sans;
+  src: url(./assets/Josefin_Sans/static/JosefinSans-Medium.ttf);
+}
+
+@font-face {
+  font-family: Poppins-light;
+  src: url(./assets/Poppins/Poppins-Light.ttf);
+}
+
+.bold{
+  font-family: Poppins-bold;
+}
+
+.light{
+  font-family: Poppins-light;
+}
+
+.font{
+  font-family: Poppins;
+}
+
+.sans{
+  font-family: Josefin-sans;
+}
+
+.appearance{
+  animation-name: appear;
+  animation-duration: 2s;
+}
+
+.slide{
+  animation-name: slide;
+  animation-duration: 2s;
+}
+
+
+
+@keyframes appear{
+  0%{
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(-1px);
+  }
+}
+
+@keyframes slide{
+  0%{
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100%{
+    opacity: 1;
+    transform: translateX(1px);
+  }
+}
