@@ -46,6 +46,11 @@
   animation-duration: 2s;
 }
 
+.picture{
+  animation-name: picture;
+  animation-duration: 2s;
+}
+
 
 
 @keyframes appear{
@@ -67,5 +72,15 @@
   100%{
     opacity: 1;
     transform: translateX(1px);
+  }
+}
+
+@keyframes picture{
+  0%{
+    opacity: 0;
+    
+  }
+  100%{
+    opacity: 1;
   }
 }
