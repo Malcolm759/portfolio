@@ -11,19 +11,21 @@ const App = () => {
   return (
     <>
       <div className=" h-[30em]">
-        <header className="Sans inline-flex text-center text-3xl mt-3">
+        <header className="sans  text-center text-3xl mt-3">
           <b>My Portfolio</b>
-          <span>
-          <button>
-            <a href={resume}>My resume</a>
-          </button>
-          </span>
-        </header>
+          
+            </header>
 
         <div className="text-center light text-4xl mt-[140px] appearance">
           Hi, i am Malcolm.
           <br />
           I'm a front-end developer
+        </div>
+        <br />
+        <div className="flex justify-center">
+           <button className="border-2  p-3 text-2xl transition-all appearance border-black rounded-full text-center hover:border-[#808080]">
+            <a href={resume}>My resume</a>
+          </button>
         </div>
       </div>
 
