@@ -5,7 +5,7 @@ import search from "./assets/search.png";
 import display from "./assets/display.png";
 import github from "./assets/github.svg";
 import whatsapp from "./assets/whatsapp.svg"
-import resume from "./assets/resume.pdf";
+import resume from "./assets/corrected.pdf";
 
 const App = () => {
   return (
@@ -24,7 +24,7 @@ const App = () => {
         <br />
         <div className="flex justify-center">
            <button className="border-2  p-3 text-2xl transition-all appearance border-black rounded-full text-center hover:border-[#808080]">
-            <a href={resume}>My resume</a>
+            <a href={resume} target="_blank">My resume</a>
           </button>
         </div>
       </div>
@@ -54,6 +54,7 @@ const App = () => {
           <img
             src={portfolio}
             alt="picture"
+            loading="lazy"
             className="h-[330px] object-contain picture"
           />
         </div>
